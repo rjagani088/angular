@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Product details</h2>
+    <div class="card-columns">
+      <div *ngFor="let product of products; let i = index" class="card bg-info">
+        <div [routerLink]="['/productdetails',{id:i}]"  class="card-header text-uppercase text-center">
+            <h4>{{product.name}}</h4>
+        </div>
+        <div class="card-body text-center">
+          <img [src]="product.display"  class="rounded-circle">  
+          <p class="card-text">Product Price:{{product.price}}</p>
+        </div>
+    </div>  
+    </div>
+</div>

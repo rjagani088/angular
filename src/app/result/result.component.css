@@ -1,0 +1,11 @@
+.right{
+    float:right;
+    width:45%;
+    background-color: aqua;
+    border: 1px solid green;
+}
+
+img{
+    width:200px;
+    height:200px;
+}

@@ -1,0 +1,20 @@
+
+<h1>Student Data</h1>
+<div class="left">Student Component
+    <h3 *ngFor="let name of names">
+        {{name}}
+    </h3>
+</div>
+<hr>
+
+<h1 *ngIf="visible else elseBlock">This is a header</h1>
+<ng-template #elseBlock>
+    <h1> This is else block</h1>
+</ng-template>
+
+
+<input type="text" #name (keyup.enter)="show(name)">
+
+
+
+
